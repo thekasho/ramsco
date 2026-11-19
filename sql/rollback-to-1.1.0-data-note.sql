@@ -1,0 +1,4 @@
+-- Note: full rollback to 1.1.0 is not automated.
+-- Restore a DB backup taken before upgrade-from-1.1.0.sql.
+-- schema_version can be set manually if needed:
+-- UPDATE schema_version SET version='1.1.0' WHERE id=1;

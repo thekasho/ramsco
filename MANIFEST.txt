@@ -1,0 +1,22 @@
+Field Ledger 2.0.1 — base package (canonical)
+=============================================
+Date: 2026-11-07
+
+Includes:
+- Core 2.0.0: ledger, tags, sectors, cycles, themes, APIs, admin
+- Full-screen map UI + popups (index / dashboard / report)
+- Escape closes popups; FAB z-index fixed; report wirePopups() fixed
+- Modern Teal as default farm theme (themes.css + style :root)
+- Responsive CSS (mobile / tablet / print)
+- Admin panel: fields, sectors, cycles, ledger, tags
+- i18n EN+AR for admin tabs, ledger, tags, sectors forms
+- Null-safe listeners (admin / dashboard / viewer / report)
+- API JSON error guards when config.php missing
+- backend/config.example.php
+
+Deploy:
+  Document root → public/
+  Keep existing backend/config.php (do not overwrite)
+  Run sql/upgrade-to-2.0.0.sql if upgrading from < 2.0.0
+
+Entry: public/index.php | public/admin.php | public/login.php

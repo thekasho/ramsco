@@ -1,0 +1,12 @@
+Field Ledger 2.0.1 — الحزمة الأساسية
+====================================
+1) ارفع المجلدات: backend/  و  public/  و  sql/
+2) Document Root يجب أن يشير إلى public/
+3) إن لم يوجد config.php: انسخ backend/config.example.php → backend/config.php
+   وعدّل بيانات قاعدة البيانات (لا تستبدل config.php العامل)
+4) نفّذ sql/upgrade-to-2.0.0.sql مرة واحدة إن لزم
+5) افتح /login.php ثم /admin.php أو /index.php
+
+مشاكل شائعة:
+• JSON يصبح HTML → تأكد من config.php ومسار public/
+• أزرار الخريطة لا تعمل → ارفع js/report.js و js/viewer.js و css/style.css ثم Ctrl+F5

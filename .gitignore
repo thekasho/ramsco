@@ -1,0 +1,4 @@
+backend/config.php
+public/map-definition.json.bak
+*.tmp
+.DS_Store
